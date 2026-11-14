@@ -132,11 +132,9 @@
 </section>
 
 <section id="comment">
-  <div class="section-intro">
-    <div>
-      <p class="eyebrow" data-i18n="steps.eyebrow">01 — Un instant pour soi</p>
-      <h2 data-i18n-html="steps.title">Ça tire, ça serre,<br><em>ça se note.</em></h2>
-    </div>
+  <div class="section-intro center">
+    <p class="eyebrow" data-i18n="steps.eyebrow">01 — Un instant pour soi</p>
+    <h2 data-i18n-html="steps.title">Ça tire, ça serre,<br><em>ça se note.</em></h2>
     <p data-i18n="steps.intro">Pas besoin de connaître les termes médicaux. Algoo vous guide pour décrire ce que vous ressentez, une petite étape à la fois.</p>
   </div>
   <div class="steps">
@@ -162,54 +160,54 @@
 </section>
 
 <section class="journal-section" id="journal">
-  <div>
+  <div class="section-intro center">
     <p class="eyebrow" data-i18n="journal.eyebrow">02 — Du quotidien à la consultation</p>
-    <h2 data-i18n-html="journal.title">Des semaines<br>de vécu.<br><em>Un rapport<br>pour en parler.</em></h2>
-    <p data-i18n="journal.p1">Les dates, les zones douloureuses, les sensations, leur intensité et les précisions que vous avez ajoutées : Algoo rassemble vos observations dans un journal et un rapport détaillé.</p>
-    <p data-i18n="journal.p2">Partagez ce rapport avec votre praticien si vous le souhaitez, pour lui donner des repères concrets sur votre quotidien. Un support pour échanger et compléter vos explications.</p>
-    <ul class="report-points">
-      <li><strong data-i18n="journal.k1t">Une synthèse d’un coup d’œil</strong><span data-i18n="journal.k1">La période, les localisations, les sensations et les intensités, sur une page claire.</span></li>
-      <li><strong data-i18n="journal.k2t">Un document soigné</strong><span data-i18n="journal.k2">Un PDF sobre et lisible, qui dit comment chaque intensité a été notée.</span></li>
-      <li><strong data-i18n="journal.k3t">Vos observations, telles quelles</strong><span data-i18n="journal.k3">Pas de moyenne, pas de score, pas d’interprétation : la lecture reste entre vous et votre praticien.</span></li>
-    </ul>
-    <button type="button" class="text-link" data-report data-i18n="journal.link">Voir un exemple de rapport →</button>
+    <h2 data-i18n-html="journal.title2">Des semaines de vécu.<br><em>Un rapport pour en parler.</em></h2>
+    <p data-i18n="journal.lead">Algoo rassemble vos observations dans un journal et un rapport détaillé, à partager avec votre praticien si vous le souhaitez.</p>
   </div>
-  <div class="journal">
-    <div class="journal-head"><strong data-i18n="journal.head">Mon journal</strong><img src="assets/poses/rest.svg" alt="" width="30" height="30"></div>
-    <div class="journal-tabs" role="group">
-      <button type="button" data-period="today" aria-pressed="true" data-i18n="journal.today">Aujourd’hui</button>
-      <button type="button" data-period="week" aria-pressed="false" data-i18n="journal.week">Cette semaine</button>
+  <div class="journal-stage">
+    <div class="journal">
+      <div class="journal-head"><strong data-i18n="journal.head">Mon journal</strong><img src="assets/poses/rest.svg" alt="" width="30" height="30"></div>
+      <div class="journal-tabs" role="group">
+        <button type="button" data-period="today" aria-pressed="true" data-i18n="journal.today">Aujourd’hui</button>
+        <button type="button" data-period="week" aria-pressed="false" data-i18n="journal.week">Cette semaine</button>
+      </div>
+      <div id="entries"></div>
+      <button type="button" class="report-btn" data-report data-i18n="journal.button">Aperçu du rapport</button>
+      <p class="small center" data-i18n="journal.caption">Exemple fictif · présentation illustrative</p>
     </div>
-    <div id="entries"></div>
-    <button type="button" class="report-btn" data-report data-i18n="journal.button">Aperçu du rapport</button>
-    <p class="small center" data-i18n="journal.caption">Exemple fictif · présentation illustrative</p>
   </div>
+  <ul class="report-points">
+    <li><span class="point-disc" aria-hidden="true"><svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16s5-8.5 13-8.5S29 16 29 16s-5 8.5-13 8.5S3 16 3 16z"/><circle cx="16" cy="16" r="3.6"/></svg></span><strong data-i18n="journal.k1t">Une synthèse d’un coup d’œil</strong><span data-i18n="journal.k1">La période, les localisations, les sensations et les intensités, sur une page claire.</span></li>
+    <li><span class="point-disc" aria-hidden="true"><svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h10l6 6v18H9z"/><path d="M19 4v6h6M13 16h8M13 21h8"/></svg></span><strong data-i18n="journal.k2t">Un document soigné</strong><span data-i18n="journal.k2">Un PDF sobre et lisible, qui dit comment chaque intensité a été notée.</span></li>
+    <li><span class="point-disc" aria-hidden="true"><svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h22v15H15l-6 5v-5H5z"/><path d="M11 13h10M11 17h6"/></svg></span><strong data-i18n="journal.k3t">Vos observations, telles quelles</strong><span data-i18n="journal.k3">Pas de moyenne, pas d’interprétation : la lecture reste entre vous et votre praticien.</span></li>
+  </ul>
+  <p class="center"><a class="text-link" id="pdf-sample" href="assets/exemples/rapport-algoo-exemple-fr.pdf" target="_blank" rel="noopener" data-i18n="journal.pdf">Voir un exemple du PDF →</a></p>
+  <p class="small center" data-i18n="journal.pdfnote">Document fictif, tel que l’app le produit.</p>
 </section>
 
 <section class="more" id="precisions">
-  <div class="section-intro">
-    <div>
-      <p class="eyebrow" data-i18n="more.eyebrow">Pour aller plus loin</p>
-      <h2 data-i18n-html="more.title">L’essentiel en quelques touchers.<br><em>Le reste, si vous le voulez.</em></h2>
-    </div>
+  <div class="section-intro center">
+    <p class="eyebrow" data-i18n="more.eyebrow">Pour aller plus loin</p>
+    <h2 data-i18n-html="more.title">L’essentiel en quelques touchers.<br><em>Le reste, si vous le voulez.</em></h2>
     <p data-i18n="more.intro">Une note tient en trois réponses. Après « C’est noté », vous pouvez en dire plus, ou vous arrêter là : rien n’est obligatoire.</p>
   </div>
   <div class="more-cards">
     <article class="more-card">
+      <span class="more-disc" aria-hidden="true"><img src="assets/poses/calm.svg" alt="" width="84" height="84"></span>
       <p class="eyebrow mauve" data-i18n="more.c1e">Ajouter des précisions</p>
       <h3 data-i18n="more.c1t">Le contexte autour de la douleur</h3>
-      <p data-i18n="more.c1">Ce que vous avez essayé et ce que vous avez ressenti ensuite, votre sommeil, votre humeur, ce qui accompagnait la douleur… Autant de repères qui se retrouvent dans le journal et le rapport.</p>
       <div class="chips" id="chips" aria-hidden="true">
         <span data-i18n="more.t1">Ce que j’ai essayé</span><span data-i18n="more.t2">Mon quotidien</span><span data-i18n="more.t3">Mon humeur</span><span data-i18n="more.t4">Autres signes</span><span data-i18n="more.t5">Une note libre</span><span class="etc" data-i18n="more.t6">et d’autres…</span>
       </div>
       <p class="small" data-i18n="more.c1n">Algoo réunit vos observations dans un même document, telles que vous les avez notées, sans les relier ni conclure.</p>
     </article>
     <article class="more-card health">
+      <span class="more-disc" aria-hidden="true"><img src="assets/poses/joy.svg" alt="" width="84" height="84"></span>
       <p class="eyebrow mauve" data-i18n="more.c2e">Apple Santé · facultatif</p>
       <h3 data-i18n="more.c2t">Des données d’Apple Santé, dans une section à part</h3>
-      <p data-i18n="more.c2">Si vous l’autorisez, le rapport peut joindre, dans une section à part, des données déjà présentes dans Apple Santé pour la même période.</p>
       <ul class="health-list">
-        <li data-i18n="more.h1">Sommeil</li><li data-i18n="more.h2">Pas</li><li data-i18n="more.h3">Fréquence cardiaque au repos</li><li data-i18n="more.h4">Tension artérielle</li><li data-i18n="more.h5">Cycle</li><li data-i18n="more.h6">Âge, poids, taille</li>
+        <li data-i18n="more.h1">Sommeil</li><li data-i18n="more.h2">Pas</li><li data-i18n="more.h3">Fréquence cardiaque au repos</li><li data-i18n="more.h4">Tension artérielle</li><li data-i18n="more.h5">Cycle menstruel</li><li data-i18n="more.h6">Âge, poids, taille</li>
       </ul>
       <p class="small" data-i18n="more.c2n">Vous choisissez donnée par donnée. Algoo lit seulement ce que vous autorisez et n’écrit rien dans Apple Santé.</p>
     </article>
@@ -265,33 +263,53 @@
 </section>
 
 <section class="pricing" id="offre">
-  <p class="eyebrow" data-i18n="price.eyebrow">Gratuit et Algoo Premium</p>
-  <h2 data-i18n-html="price.title">L’essentiel est gratuit.<br><em>Le reste, si vous en avez besoin.</em></h2>
+  <div class="section-intro center">
+    <p class="eyebrow" data-i18n="price.eyebrow">Gratuit et Algoo Premium</p>
+    <h2 data-i18n-html="price.title">L’essentiel est gratuit.<br><em>Le reste, si vous en avez besoin.</em></h2>
+  </div>
   <div class="plans">
     <div class="plan">
       <h3 data-i18n="price.free.t">Gratuit</h3>
       <p class="plan-price" data-i18n="price.free.p">Sans limite de durée</p>
       <ul>
-        <li data-i18n="price.free.1">Noter vos douleurs autant que vous voulez, sur iPhone et Apple Watch</li>
-        <li data-i18n="price.free.2">Le journal et l’aperçu des 30 derniers jours</li>
-        <li data-i18n="price.free.3">Le rapport essentiel sur ces 30 jours</li>
-        <li data-i18n="price.free.4">L’export complet de vos données, et leur suppression</li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></svg><span data-i18n="price.free.s1">Noter vos douleurs, sur iPhone et Apple Watch</span></li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6c-2-1.5-5-2-8-1.5v13c3-.5 6 0 8 1.500 2-1.500 5-2 8-1.500v-13c-3-.5-6 0-8 1.500z"/><path d="M12 6v13"/></svg><span data-i18n="price.free.2">Le journal et l’aperçu des 30 derniers jours</span></li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 13h5M10 17h5"/></svg><span data-i18n="price.free.3">Le rapport essentiel sur ces 30 jours</span></li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 13v6h14v-6"/></svg><span data-i18n="price.free.s4">L’export complet de vos données</span></li>
       </ul>
+      <span class="plan-scene" aria-hidden="true">
+        <i class="sun"></i><i class="hill"></i>
+        <img src="assets/poses/calm.svg" alt="" width="104" height="104">
+        <b class="zz">z</b><b class="zz two">z</b>
+      </span>
     </div>
     <div class="plan plan-premium">
+      <span class="plan-dot sand" aria-hidden="true"></span><span class="plan-dot sage" aria-hidden="true"></span>
+      <span class="plan-mascot" aria-hidden="true">
+        <svg class="crown" viewBox="0 0 64 44" width="50" height="34"><path fill="#ac98c2" d="M8 38 4 14a4 4 0 1 1 5-1l11 9 9-15a4.5 4.5 0 1 1 6 0l9 15 11-9a4 4 0 1 1 5 1l-4 24z"/><path stroke="#fffdf8" stroke-width="2.5" d="M9 31h46"/></svg>
+        <img src="assets/poses/hello.svg" alt="" width="112" height="112">
+      </span>
       <h3 data-i18n="price.premium.t">Algoo Premium</h3>
-      <p class="plan-price" data-i18n-html="price.premium.p"><strong>3,99 €</strong> par mois ou <strong>29,99 €</strong> par an</p>
+      <div class="plan-best">
+        <div>
+          <p class="opt-name" data-i18n="price.opt.y">Annuel</p>
+          <p class="opt-price" data-i18n-html="price.opt.yp"><strong>29,99 €</strong> par an</p>
+          <p class="opt-sub" data-i18n-html="price.opt.ys2">soit 2,50 € par mois<br>7 jours gratuits pour essayer</p>
+        </div>
+        <p class="opt-save" data-i18n-html="price.opt.save"><strong>−37 %</strong><span>d’économie</span></p>
+      </div>
+      <p class="opt-monthly" data-i18n-html="price.opt.mline">Mensuel : <strong>3,99 €</strong> par mois</p>
       <ul>
-        <li data-i18n="price.premium.1">Les précisions : contexte, autres signes, quotidien, humeur, ce que vous avez essayé, notes</li>
-        <li data-i18n="price.premium.2">Tout votre journal, au-delà de 30 jours</li>
-        <li data-i18n="price.premium.3">L’aperçu sur de longues périodes</li>
-        <li data-i18n="price.premium.4">Le rapport approfondi, avec vos précisions et vos notes</li>
-        <li data-i18n="price.premium.5">Des données d’Apple Santé jointes au rapport, si vous le souhaitez</li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M4 12h16M4 17h16"/><path d="M18 4v6M15 7h6"/></svg><span data-i18n="price.premium.s1">Contexte, signes, humeur, et plus</span></li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6c-2-1.500-5-2-8-1.500v13c3-.5 6 0 8 1.500 2-1.500 5-2 8-1.500v-13c-3-.5-6 0-8 1.500z"/><path d="M12 6v13"/></svg><span data-i18n="price.premium.2">Tout votre journal, au-delà de 30 jours</span></li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg><span data-i18n="price.premium.s3">Votre aperçu sur 3 mois, 6 mois, 1 an</span></li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 15h5M10 18h3"/></svg><span data-i18n="price.premium.s4">Un rapport détaillé, prêt à partager</span></li>
+        <li><svg class="li-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.500-7-10a4 4 0 0 1 7-2.500A4 4 0 0 1 19 10c0 5.500-7 10-7 10z"/></svg><span data-i18n="price.premium.s5">Apple Santé dans votre rapport</span></li>
       </ul>
-      <p class="small" data-i18n="price.premium.n">Prix en France ; le prix est affiché dans votre devise sur l’App Store. 7 jours d’essai gratuit avec l’abonnement annuel, pour un premier abonnement. Abonnement à renouvellement automatique, résiliable à tout moment dans votre compte App Store.</p>
     </div>
   </div>
-  <p class="small" data-i18n="price.keep">Ce que vous avez noté reste à vous : vous pouvez tout exporter et tout supprimer, avec ou sans abonnement.</p>
+  <p class="small plan-note" data-i18n="price.keep">Ce que vous avez noté reste à vous : vous pouvez tout exporter et tout supprimer, avec ou sans abonnement.</p>
+  <p class="small plan-note" data-i18n="price.premium.n">Prix en France ; le prix est affiché dans votre devise sur l’App Store. 7 jours d’essai gratuit avec l’abonnement annuel, pour un premier abonnement. Abonnement à renouvellement automatique, résiliable à tout moment dans votre compte App Store.</p>
 </section>
 
 <section class="faq" id="questions">
@@ -316,7 +334,7 @@
   <p class="eyebrow" data-i18n="closing.eyebrow">Bientôt, dans votre poche</p>
   <h2 data-i18n="closing.title">Dites-le à Algoo.</h2>
   <p data-i18n="closing.p">Vos mots au quotidien, des repères pour la consultation. Algoo, le petit compagnon qui vous aide à noter vos douleurs et à mieux en parler.</p>
-  <a class="btn light" href="#demo"><span data-i18n="closing.cta">Faire un petit essai</span> <span aria-hidden="true">→</span></a>
+  <a class="btn" href="#demo"><span data-i18n="closing.cta">Faire un petit essai</span> <span aria-hidden="true">→</span></a>
 </section>
 
 </main>
@@ -334,7 +352,7 @@
   <h2 id="report-title" data-i18n="report.title">Mon rapport</h2>
   <p data-i18n="report.intro">Les observations du quotidien réunies pour mieux en parler : quand, où, quelle sensation et quelle intensité.</p>
   <div id="report-rows"></div>
-  <p data-i18n="report.note">Présentation illustrative. Le rapport décrit ce que vous avez noté, sans moyenne, sans score et sans interprétation.</p>
+  <p data-i18n="report.note">Présentation illustrative. Le rapport décrit ce que vous avez noté, sans moyenne et sans interprétation.</p>
   <button type="button" class="btn" data-close data-i18n="report.close">Fermer l’aperçu</button>
 </dialog>
 

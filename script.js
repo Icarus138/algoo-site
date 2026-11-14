@@ -30,11 +30,14 @@
     'steps.s3t': 'How intense is it?', 'steps.s3': 'With words, from 0 to 10, or with facial expressions. Nothing is chosen for you, and your note joins the journal.',
     'journal.eyebrow': '02 — From everyday life to the appointment',
     'journal.title': 'Weeks of<br>lived experience.<br><em>One report<br>to talk about it.</em>',
+    'journal.pdf': 'See a sample PDF →', 'journal.pdfnote': 'A fictional document, as the app produces it.',
+    'journal.title2': 'Weeks of lived experience.<br><em>One report to talk about it.</em>',
+    'journal.lead': 'Algoo gathers your observations in a journal and a detailed report, to share with your practitioner if you wish.',
     'journal.p1': 'Dates, painful areas, sensations, their intensity and the details you added: Algoo gathers your observations in a journal and a detailed report.',
     'journal.p2': 'Share this report with your practitioner if you wish, to give them concrete markers of your daily life. Something to support the conversation and complete your explanations.',
     'journal.k1t': 'A summary at a glance', 'journal.k1': 'The period, locations, sensations and intensities, on one clear page.',
     'journal.k2t': 'A carefully made document', 'journal.k2': 'A plain, readable PDF that says how each intensity was noted.',
-    'journal.k3t': 'Your observations, as they are', 'journal.k3': 'No average, no score, no interpretation: reading it stays between you and your practitioner.',
+    'journal.k3t': 'Your observations, as they are', 'journal.k3': 'No average, no interpretation: reading it stays between you and your practitioner.',
     'more.eyebrow': 'Going further',
     'more.title': 'The essentials in a few taps.<br><em>The rest, if you want.</em>',
     'more.intro': 'A note takes three answers. After “Saved”, you can say more, or stop there: nothing is required.',
@@ -44,7 +47,7 @@
     'more.c1n': 'Algoo gathers your observations in one document, as you noted them, without linking them or drawing conclusions.',
     'more.c2e': 'Apple Health · optional', 'more.c2t': 'Apple Health data, in a separate section',
     'more.c2': 'If you allow it, the report can include, in a separate section, data already in Apple Health for the same period.',
-    'more.h1': 'Sleep', 'more.h2': 'Steps', 'more.h3': 'Resting heart rate', 'more.h4': 'Blood pressure', 'more.h5': 'Cycle', 'more.h6': 'Age, weight, height',
+    'more.h1': 'Sleep', 'more.h2': 'Steps', 'more.h3': 'Resting heart rate', 'more.h4': 'Blood pressure', 'more.h5': 'Menstrual cycle', 'more.h6': 'Age, weight, height',
     'more.c2n': 'You choose item by item. Algoo only reads what you allow and writes nothing to Apple Health.',
     'trust.title': 'Your journal stays<br><em>in your hands.</em>',
     'trust.4t': 'Apple Health, only if you want.', 'trust.4': 'Access is set item by item and can be withdrawn at any time in iPhone settings.',
@@ -91,6 +94,12 @@
     'price.free.1': 'Note your pain as often as you like, on iPhone and Apple Watch', 'price.free.2': 'The journal and overview for the last 30 days', 'price.free.3': 'The essential report for those 30 days', 'price.free.4': 'A full export of your data, and its deletion',
     'price.premium.t': 'Algoo Premium', 'price.premium.p': '<strong>€3.99</strong> a month or <strong>€29.99</strong> a year',
     'price.premium.1': 'Details: context, other signs, daily life, mood, what you tried, notes', 'price.premium.2': 'Your whole journal, beyond 30 days', 'price.premium.3': 'The overview over long periods', 'price.premium.4': 'The in-depth report, with your details and notes', 'price.premium.5': 'Apple Health data added to the report, if you wish',
+    'price.free.s1': 'Note your pain, on iPhone and Apple Watch', 'price.free.s4': 'A full export of your data',
+    'price.premium.trial': '7 days free with the yearly plan', 'price.premium.p2': '<strong>€29.99</strong> a year <span>or €3.99 a month</span>',
+    'price.premium.s1': 'Context, signs, mood, and more', 'price.premium.s3': 'Your overview over 3 months, 6 months, 1 year', 'price.premium.s4': 'A detailed report, ready to share', 'price.premium.s5': 'Apple Health in your report',
+    'price.opt.tag': '7 days free · −37%', 'price.opt.y': 'Yearly', 'price.opt.yp': '<strong>€29.99</strong> a year', 'price.opt.ys': 'that’s €2.50 a month',
+    'price.opt.m': 'Monthly', 'price.opt.mp': '<strong>€3.99</strong> a month', 'price.opt.ms': 'that’s €47.88 over a year',
+    'price.opt.ys2': 'that’s €2.50 a month<br>7 days free to try it', 'price.opt.save': '<strong>−37%</strong><span>saved</span>', 'price.opt.mline': 'Monthly: <strong>€3.99</strong> a month',
     'price.premium.n': 'Price in France; the price is shown in your currency on the App Store. 7-day free trial with the yearly plan, for a first subscription. Auto-renewing subscription you can cancel anytime in your App Store account.',
     'price.keep': 'What you noted stays yours: you can export all of it and delete it, with or without a subscription.',
     'faq.q7': 'Does this demo keep my answers?', 'faq.a7': 'No. The choices on this page only let you try the check-in and disappear when you reload it.',
@@ -103,7 +112,7 @@
     'footer.draft': '© 2026 Algoo',
     'report.eyebrow': 'Fictional example', 'report.title': 'My report',
     'report.intro': 'Everyday observations brought together to talk about them more easily: when, where, which sensation and how intense.',
-    'report.note': 'For illustration. The report describes what you noted, with no average, score or interpretation.',
+    'report.note': 'For illustration. The report describes what you noted, with no average or interpretation.',
     'report.close': 'Close preview'
   };
 
@@ -253,6 +262,8 @@
     lang = l === 'en' ? 'en' : 'fr';
     var dict = lang === 'en' ? EN : FR;
     document.documentElement.lang = lang;
+    var sample = document.getElementById('pdf-sample');
+    if (sample) sample.href = 'assets/exemples/rapport-algoo-exemple-' + (lang === 'en' ? 'en' : 'fr') + '.pdf';
     textNodes.forEach(function (n) { n.textContent = dict[n.dataset.i18n] || FR[n.dataset.i18n]; });
     document.querySelectorAll('[data-i18n-label]').forEach(function (n) { n.setAttribute('aria-label', lang === 'en' ? EN[n.dataset.i18nLabel] : 'Faire réagir Algoo'); });
     htmlNodes.forEach(function (n) { n.innerHTML = dict[n.dataset.i18nHtml] || FR[n.dataset.i18nHtml]; }); // textes de ce fichier uniquement
@@ -309,7 +320,7 @@
 
   // Apparition au défilement ; les personnages du récit s'animent en entrant dans l'écran.
   var chips = document.getElementById('chips');
-  var revealed = document.querySelectorAll('.more-card, .meet, .story-head, .step, .journal-section, .watch-section, .friends-intro, .friend-card, .three, .faq, .closing');
+  var revealed = document.querySelectorAll('.more-card, .meet, .story-head, .step, .journal-section .section-intro, .journal-stage, .report-points, .plan, .watch-section, .friends-intro, .friend-card, .three, .faq, .closing');
   var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if ('IntersectionObserver' in window && !still) {
     var io = new IntersectionObserver(function (items) {
