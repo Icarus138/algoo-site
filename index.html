@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Algoo — Noter ses douleurs et mieux en parler</title>
+<meta name="description" content="Notez vos douleurs avec des mots simples, sur iPhone et Apple Watch. Algoo rassemble vos observations dans un rapport à partager avec votre praticien.">
+<meta name="theme-color" content="#f7f5f0">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#" aria-label="Algoo"><img src="assets/algoo-wordmark.svg" alt="algoo" height="30"></a>
+  <nav aria-label="Navigation">
+    <a href="#rencontre" data-i18n="nav.meet">Voici Algoo</a>
+    <a href="#journal" data-i18n="nav.journal">Le rapport</a>
+    <a href="#precisions" data-i18n="nav.more">Précisions et Santé</a>
+    <a href="#watch" data-i18n="nav.watch">Apple Watch</a>
+    <a href="#copains" data-i18n="nav.friends">Ses copains</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Langue / Language">
+    <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow"><i class="status"></i><span data-i18n="hero.eyebrow">Votre compagnon pour noter vos douleurs, au quotidien</span></p>
+    <h1 data-i18n-html="hero.title">Vos douleurs,<br>plus faciles<br>à <em>expliquer.</em></h1>
+    <p class="intro" data-i18n-html="hero.intro">Avec Algoo, notez vos douleurs au moment où vous les ressentez, avec des mots simples. Retrouvez vos observations dans un <strong>rapport détaillé à partager, si vous le souhaitez, avec votre praticien.</strong></p>
+    <div class="cta">
+      <a class="btn" href="#demo"><span data-i18n="hero.try">Essayer sur le téléphone</span> <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="#journal" data-i18n="hero.report">Découvrir le rapport</a>
+    </div>
+    <p class="small" data-i18n="hero.soon">Bientôt sur iPhone et Apple Watch.</p>
+  </div>
+
+  <div class="scene" id="demo">
+    <div class="orb"></div>
+    <p class="orbit-text" data-i18n="hero.orbit">On fait un petit point ?</p>
+    <div class="phone">
+      <div class="island"></div>
+      <div class="screen" id="phone" aria-live="polite">
+        <div class="phone-top"><img src="assets/algoo-wordmark.svg" alt="" height="16"></div>
+        <img class="mascot" id="demo-mascot" src="assets/poses/hello.svg" alt="" width="136" height="136">
+        <p class="greet" id="demo-greet"></p>
+        <p class="question" id="demo-question"></p>
+        <div class="choices" id="demo-choices"></div>
+        <div class="actions" id="demo-actions"></div>
+      </div>
+      <p class="tap-hint" id="tap-hint" aria-hidden="true"><i></i><span data-i18n="demo.hint">Touchez pour essayer</span></p>
+      <p class="demo-label" data-i18n="demo.caption">Démo interactive · rien n’est conservé ni envoyé</p>
+    </div>
+    <div class="watch small-watch" aria-hidden="true">
+      <div class="watch-screen">
+        <div class="watch-top"><span data-i18n="watch.greet">Bonjour</span><span>9:41</span></div>
+        <img class="mascot" src="assets/poses/saved.svg" alt="" width="62" height="62">
+        <strong data-i18n="app.saved">C’est noté.</strong>
+        <span class="watch-pill" data-i18n="watch.summary">Bas du dos · Modérée</span>
+      </div>
+    </div>
+    <p class="sticky"><span aria-hidden="true">✓</span><span data-i18n-html="hero.note">Moins à retenir.<br>Plus à partager.</span></p>
+  </div>
+</section>
+
+<ul class="benefits">
+  <li data-i18n="benefit.1">Noter spontanément, avec vos mots</li>
+  <li data-i18n="benefit.2">Relire ce que vous avez noté, jour après jour</li>
+  <li data-i18n="benefit.3">Partager un rapport avec votre praticien</li>
+</ul>
+
+<section class="film" id="film">
+  <p class="eyebrow mauve" data-i18n="film.eyebrow">En quarante secondes</p>
+  <h2 data-i18n-html="film.title">Algoo, <em>en images.</em></h2>
+  <!-- Elle a du son mais démarre muette, comme l'exigent les navigateurs ; le son se rétablit depuis
+       les commandes. Sous-titres au choix. Elle ne démarre seule que si elle est à l'écran et si le système
+       ne demande pas de réduire les animations ; les commandes restent toujours disponibles. -->
+  <div class="film-frame">
+    <video id="film-video" muted loop playsinline controls preload="none" poster="assets/video/algoo-fr.jpg"
+           data-src-fr="assets/video/algoo-fr.mp4" data-src-en="assets/video/algoo-en.mp4"
+           data-poster-fr="assets/video/algoo-fr.jpg" data-poster-en="assets/video/algoo-en.jpg"
+           data-vtt-fr="assets/video/algoo-fr.vtt" data-vtt-en="assets/video/algoo-en.vtt">
+      <source src="assets/video/algoo-fr.mp4" type="video/mp4">
+      <track kind="captions" srclang="fr" label="Français" src="assets/video/algoo-fr.vtt">
+    </video>
+  </div>
+</section>
+
+<section class="meet" id="rencontre">
+  <div class="meet-art">
+    <div class="blob"></div>
+    <button type="button" class="poke" id="poke" data-i18n-label="meet.poke" aria-label="Faire réagir Algoo"><img class="mascot idle" id="companion" src="assets/poses/hello.svg" alt="" width="270" height="270"></button>
+    <p class="speech" data-i18n-html="meet.speech">On commence<br>par un petit point ?</p>
+    <i class="tiny-orb"></i>
+  </div>
+  <div class="meet-copy">
+    <p class="eyebrow" data-i18n="meet.eyebrow">Votre vécu mérite ses mots</p>
+    <h2 data-i18n-html="meet.title">Tout raconter<br>en consultation&nbsp;?<br><em>Pas si simple.</em></h2>
+    <p data-i18n="meet.p1">Quand la douleur accompagne le quotidien, il peut être difficile de décrire plusieurs semaines de sensations pendant un rendez-vous. Où, quand, comment, à quel point… Les mots et les souvenirs ne viennent pas toujours au bon moment.</p>
+    <p data-i18n-html="meet.p2">C’est là qu’Algoo vous accompagne. <strong>« Où ça fait mal ? Ça tire, ça brûle ? À quel point ? »</strong> Des questions simples pour noter ce que vous ressentez au fil de la journée, sans attendre la consultation.</p>
+    <p class="story-end" data-i18n="meet.end">Un petit compagnon bienveillant pour rendre ce moment plus simple, plus spontané, et un peu plus doux.</p>
+  </div>
+</section>
+
+<section class="story" id="recit">
+  <div class="story-head">
+    <p class="eyebrow mauve" data-i18n="story.eyebrow">Un compagnon, pas un formulaire</p>
+    <h2 data-i18n-html="story.title">Il vous accompagne,<br><em>du premier mot au rendez-vous.</em></h2>
+  </div>
+  <!-- Récit au défilement : le personnage reste à l'écran et change à chaque temps. Sans script,
+       les cinq temps se lisent simplement l'un sous l'autre. -->
+  <div class="scrolly" id="scrolly">
+    <div class="scrolly-stage" aria-hidden="true">
+      <div class="stage-disc b1" id="story-disc"><img class="mascot" id="story-mascot" src="assets/poses/hello.svg" alt="" width="190" height="190"></div>
+      <p class="stage-chip" id="story-chip">Comment ça se passe ?</p>
+      <div class="stage-dots" id="story-dots"></div>
+    </div>
+    <ol class="scrolly-steps">
+      <li class="scrolly-step" data-pose="hello" data-anim="hop" data-tone="b1"><span class="step-n">1</span><h3 data-i18n="story.b1t">Il vous dit bonjour</h3><p data-i18n="story.b1">Une question à la fois, quand vous en avez envie. Jamais de reproche si vous n’avez rien noté.</p><span class="chip-src" hidden data-i18n="story.c1">Comment ça se passe ?</span></li>
+      <li class="scrolly-step" data-pose="squeeze" data-anim="squeeze" data-tone="b2"><span class="step-n">2</span><h3 data-i18n="story.b2t">Il montre ce que vous ressentez</h3><p data-i18n="story.b2">Ça serre, ça tire, ça brûle : il mime la sensation, vous reconnaissez la vôtre. Pas de vocabulaire à apprendre.</p><span class="chip-src" hidden data-i18n="story.c2">Ça serre</span></li>
+      <li class="scrolly-step" data-pose="neutral" data-anim="hop" data-tone="b3"><span class="step-n">3</span><h3 data-i18n="story.b4t">Vous dites à quel point</h3><p data-i18n="story.b4">Avec des mots, un nombre ou un visage : c’est vous qui choisissez. Rien n’est coché d’avance.</p><span class="chip-src" hidden data-i18n="story.c4">Modérée</span></li>
+      <li class="scrolly-step" data-pose="saved" data-anim="saved" data-tone="b1"><span class="step-n">4</span><h3 data-i18n="story.b3t">Il s’en souvient pour vous</h3><p data-i18n="story.b3">Chaque note rejoint votre journal. Vous n’avez plus à tout garder en tête.</p><span class="chip-src" hidden data-i18n="story.c3">C’est noté.</span></li>
+      <li class="scrolly-step" data-pose="calm" data-anim="hop" data-tone="b2"><span class="step-n">5</span><h3 data-i18n="story.b5t">Le jour du rendez-vous, tout est là</h3><p data-i18n="story.b5">Un rapport clair, avec vos mots, à montrer si vous le souhaitez. Vous racontez, sans rien oublier.</p><span class="chip-src" hidden data-i18n="story.c5">Votre rapport est prêt</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="comment">
+  <div class="section-intro">
+    <div>
+      <p class="eyebrow" data-i18n="steps.eyebrow">01 — Un instant pour soi</p>
+      <h2 data-i18n-html="steps.title">Ça tire, ça serre,<br><em>ça se note.</em></h2>
+    </div>
+    <p data-i18n="steps.intro">Pas besoin de connaître les termes médicaux. Algoo vous guide pour décrire ce que vous ressentez, une petite étape à la fois.</p>
+  </div>
+  <div class="steps">
+    <article class="step">
+      <span class="num">01</span>
+      <div class="mini"><span class="tag" data-i18n="steps.tag1">Épaule, côté gauche</span></div>
+      <h3 data-i18n="steps.s1t">Où ça fait mal ?</h3>
+      <p data-i18n="steps.s1">Une liste courte ou une silhouette à toucher. Vos localisations récentes reviennent pour aller plus vite.</p>
+    </article>
+    <article class="step">
+      <span class="num">02</span>
+      <div class="mini"><span class="tag tilt" data-i18n="steps.tag2">Ça brûle</span></div>
+      <h3 data-i18n="steps.s2t">Ça fait quoi ?</h3>
+      <p data-i18n="steps.s2">Ça pince, ça tire, ça serre… Le personnage montre la sensation, vous choisissez celle qui ressemble.</p>
+    </article>
+    <article class="step">
+      <span class="num">03</span>
+      <div class="mini"><span class="levels" aria-hidden="true"><i></i><i class="on"></i><i></i><i></i></span></div>
+      <h3 data-i18n="steps.s3t">Quelle intensité ?</h3>
+      <p data-i18n="steps.s3">Avec des mots, de 0 à 10 ou avec des expressions du visage. Rien n’est choisi à votre place, et votre note rejoint le journal.</p>
+    </article>
+  </div>
+</section>
+
+<section class="journal-section" id="journal">
+  <div>
+    <p class="eyebrow" data-i18n="journal.eyebrow">02 — Du quotidien à la consultation</p>
+    <h2 data-i18n-html="journal.title">Des semaines<br>de vécu.<br><em>Un rapport<br>pour en parler.</em></h2>
+    <p data-i18n="journal.p1">Les dates, les zones douloureuses, les sensations, leur intensité et les précisions que vous avez ajoutées : Algoo rassemble vos observations dans un journal et un rapport détaillé.</p>
+    <p data-i18n="journal.p2">Partagez ce rapport avec votre praticien si vous le souhaitez, pour lui donner des repères concrets sur votre quotidien. Un support pour échanger et compléter vos explications.</p>
+    <ul class="report-points">
+      <li><strong data-i18n="journal.k1t">Une synthèse d’un coup d’œil</strong><span data-i18n="journal.k1">La période, les localisations, les sensations et les intensités, sur une page claire.</span></li>
+      <li><strong data-i18n="journal.k2t">Un document soigné</strong><span data-i18n="journal.k2">Un PDF sobre et lisible, qui dit comment chaque intensité a été notée.</span></li>
+      <li><strong data-i18n="journal.k3t">Vos observations, telles quelles</strong><span data-i18n="journal.k3">Pas de moyenne, pas de score, pas d’interprétation : la lecture reste entre vous et votre praticien.</span></li>
+    </ul>
+    <button type="button" class="text-link" data-report data-i18n="journal.link">Voir un exemple de rapport →</button>
+  </div>
+  <div class="journal">
+    <div class="journal-head"><strong data-i18n="journal.head">Mon journal</strong><img src="assets/poses/rest.svg" alt="" width="30" height="30"></div>
+    <div class="journal-tabs" role="group">
+      <button type="button" data-period="today" aria-pressed="true" data-i18n="journal.today">Aujourd’hui</button>
+      <button type="button" data-period="week" aria-pressed="false" data-i18n="journal.week">Cette semaine</button>
+    </div>
+    <div id="entries"></div>
+    <button type="button" class="report-btn" data-report data-i18n="journal.button">Aperçu du rapport</button>
+    <p class="small center" data-i18n="journal.caption">Exemple fictif · présentation illustrative</p>
+  </div>
+</section>
+
+<section class="more" id="precisions">
+  <div class="section-intro">
+    <div>
+      <p class="eyebrow" data-i18n="more.eyebrow">Pour aller plus loin</p>
+      <h2 data-i18n-html="more.title">L’essentiel en quelques touchers.<br><em>Le reste, si vous le voulez.</em></h2>
+    </div>
+    <p data-i18n="more.intro">Une note tient en trois réponses. Après « C’est noté », vous pouvez en dire plus, ou vous arrêter là : rien n’est obligatoire.</p>
+  </div>
+  <div class="more-cards">
+    <article class="more-card">
+      <p class="eyebrow mauve" data-i18n="more.c1e">Ajouter des précisions</p>
+      <h3 data-i18n="more.c1t">Le contexte autour de la douleur</h3>
+      <p data-i18n="more.c1">Ce que vous avez essayé et ce que vous avez ressenti ensuite, votre sommeil, votre humeur, ce qui accompagnait la douleur… Autant de repères qui se retrouvent dans le journal et le rapport.</p>
+      <div class="chips" id="chips" aria-hidden="true">
+        <span data-i18n="more.t1">Ce que j’ai essayé</span><span data-i18n="more.t2">Mon quotidien</span><span data-i18n="more.t3">Mon humeur</span><span data-i18n="more.t4">Autres signes</span><span data-i18n="more.t5">Une note libre</span><span class="etc" data-i18n="more.t6">et d’autres…</span>
+      </div>
+      <p class="small" data-i18n="more.c1n">Algoo réunit vos observations dans un même document, telles que vous les avez notées, sans les relier ni conclure.</p>
+    </article>
+    <article class="more-card health">
+      <p class="eyebrow mauve" data-i18n="more.c2e">Apple Santé · facultatif</p>
+      <h3 data-i18n="more.c2t">Des données d’Apple Santé, dans une section à part</h3>
+      <p data-i18n="more.c2">Si vous l’autorisez, le rapport peut joindre, dans une section à part, des données déjà présentes dans Apple Santé pour la même période.</p>
+      <ul class="health-list">
+        <li data-i18n="more.h1">Sommeil</li><li data-i18n="more.h2">Pas</li><li data-i18n="more.h3">Fréquence cardiaque au repos</li><li data-i18n="more.h4">Tension artérielle</li><li data-i18n="more.h5">Cycle</li><li data-i18n="more.h6">Âge, poids, taille</li>
+      </ul>
+      <p class="small" data-i18n="more.c2n">Vous choisissez donnée par donnée. Algoo lit seulement ce que vous autorisez et n’écrit rien dans Apple Santé.</p>
+    </article>
+  </div>
+</section>
+
+<section class="watch-section" id="watch">
+  <div class="watch-art">
+    <div class="watch" aria-hidden="true">
+      <div class="watch-screen">
+        <div class="watch-top"><span data-i18n="watch.greet">Bonjour</span><span>9:41</span></div>
+        <strong class="wq" data-i18n="app.question">Comment ça se passe ?</strong>
+        <img class="mascot" src="assets/poses/neutral.svg" alt="" width="58" height="58">
+        <span class="watch-pill" data-i18n="watch.chip">Bas du dos · Modifier</span>
+        <span class="watch-btn solid" data-i18n="app.pain">J’ai mal</span>
+        <span class="watch-btn" data-i18n="app.nopain">Pas de douleur</span>
+      </div>
+    </div>
+  </div>
+  <div class="watch-copy">
+    <p class="eyebrow mauve" data-i18n="watch.eyebrow">03 — Un geste spontané, au poignet</p>
+    <h2 data-i18n-html="watch.title">Notez-le<br>quand vous<br><em>le ressentez.</em></h2>
+    <p data-i18n="watch.p1">Une douleur à noter, sans sortir votre téléphone. Une question, le personnage, un bouton : la montre propose votre localisation habituelle et la couronne fait défiler les sensations.</p>
+    <p data-i18n="watch.p2">Quelques gestes au poignet pour enrichir le journal que vous retrouverez sur iPhone.</p>
+  </div>
+</section>
+
+<section class="friends-section" id="copains">
+  <div class="friends-intro">
+    <p class="eyebrow mauve" data-i18n="friends.eyebrow">Une petite bande, beaucoup de douceur</p>
+    <h2 data-i18n-html="friends.title">Algoo est venu<br><em>avec ses copains.</em></h2>
+    <p data-i18n="friends.intro">Une mèche en bataille, une bouille toute ronde, des poils dans tous les sens… Cette petite bande apporte de la douceur et de la bonne humeur, pour vous aider à vous sentir à l’aise quand vous décrivez vos douleurs.</p>
+  </div>
+  <div class="friends-lineup" role="group" aria-labelledby="pick-label">
+    <button type="button" class="friend-card" data-friend="algoo" data-src="assets/poses/hello.svg" aria-pressed="true"><span class="halo h1"><img src="assets/poses/hello.svg" alt="" width="190" height="190"></span><strong class="fname">Algoo</strong><span class="fdesc" data-i18n-html="friends.c1">Les grands yeux attentifs.<br>Le premier à vous dire bonjour.</span></button>
+    <button type="button" class="friend-card" data-friend="meche" data-src="assets/friends/meche.png" aria-pressed="false"><span class="halo h2"><img src="assets/friends/meche.png" alt="" width="150" height="150"></span><strong class="fname" data-i18n="friends.n2">La petite mèche</strong><span class="fdesc" data-i18n-html="friends.c2">Un air curieux.<br>Une touche de bonne humeur.</span></button>
+    <button type="button" class="friend-card" data-friend="rond" data-src="assets/friends/rond.png" aria-pressed="false"><span class="halo h3"><img src="assets/friends/rond.png" alt="" width="150" height="150"></span><strong class="fname" data-i18n="friends.n3">Le tout rond</strong><span class="fdesc" data-i18n-html="friends.c3">Une présence tranquille.<br>Chacun prend son temps.</span></button>
+    <button type="button" class="friend-card" data-friend="poilu" data-src="assets/friends/poilu.png" aria-pressed="false"><span class="halo h4"><img src="assets/friends/poilu.png" alt="" width="150" height="150"></span><strong class="fname" data-i18n="friends.n4">Le poilu</strong><span class="fdesc" data-i18n-html="friends.c4">Un peu ébouriffé.<br>Tout aussi attachant.</span></button>
+  </div>
+  <p class="friends-caption" id="pick-label" data-i18n="friends.caption">Touchez celui qui vous accompagnera.</p>
+  <p class="small center" data-i18n="friends.project">Le choix du compagnon est un projet pour l’app ; ici, il change le personnage de cette page.</p>
+</section>
+
+<section class="trust">
+  <p class="eyebrow" data-i18n="trust.eyebrow">Vos données</p>
+  <h2 data-i18n-html="trust.title">Votre journal reste<br><em>entre vos mains.</em></h2>
+  <div class="three four">
+    <p><strong data-i18n="trust.1t">Pas de compte, pas de serveur Algoo.</strong> <span data-i18n="trust.1">Rien à créer pour commencer. Votre journal est conservé sur vos appareils.</span></p>
+    <p><strong data-i18n="trust.2t">Ni publicité, ni mesure d’audience.</strong> <span data-i18n="trust.2">L’app ne contient aucun outil de suivi publicitaire ou statistique.</span></p>
+    <p><strong data-i18n="trust.3t">Vous décidez du partage.</strong> <span data-i18n="trust.3">Un rapport ne sort de l’app que lorsque vous le demandez. Les sauvegardes de l’appareil suivent vos réglages Apple.</span></p>
+    <p><strong data-i18n="trust.4t">Apple Santé, seulement si vous le voulez.</strong> <span data-i18n="trust.4">L’accès se règle donnée par donnée et se retire à tout moment dans les réglages de l’iPhone.</span></p>
+  </div>
+</section>
+
+<section class="pricing" id="offre">
+  <p class="eyebrow" data-i18n="price.eyebrow">Gratuit et Algoo Premium</p>
+  <h2 data-i18n-html="price.title">L’essentiel est gratuit.<br><em>Le reste, si vous en avez besoin.</em></h2>
+  <div class="plans">
+    <div class="plan">
+      <h3 data-i18n="price.free.t">Gratuit</h3>
+      <p class="plan-price" data-i18n="price.free.p">Sans limite de durée</p>
+      <ul>
+        <li data-i18n="price.free.1">Noter vos douleurs autant que vous voulez, sur iPhone et Apple Watch</li>
+        <li data-i18n="price.free.2">Le journal et l’aperçu des 30 derniers jours</li>
+        <li data-i18n="price.free.3">Le rapport essentiel sur ces 30 jours</li>
+        <li data-i18n="price.free.4">L’export complet de vos données, et leur suppression</li>
+      </ul>
+    </div>
+    <div class="plan plan-premium">
+      <h3 data-i18n="price.premium.t">Algoo Premium</h3>
+      <p class="plan-price" data-i18n-html="price.premium.p"><strong>3,99 €</strong> par mois ou <strong>29,99 €</strong> par an</p>
+      <ul>
+        <li data-i18n="price.premium.1">Les précisions : contexte, autres signes, quotidien, humeur, ce que vous avez essayé, notes</li>
+        <li data-i18n="price.premium.2">Tout votre journal, au-delà de 30 jours</li>
+        <li data-i18n="price.premium.3">L’aperçu sur de longues périodes</li>
+        <li data-i18n="price.premium.4">Le rapport approfondi, avec vos précisions et vos notes</li>
+        <li data-i18n="price.premium.5">Des données d’Apple Santé jointes au rapport, si vous le souhaitez</li>
+      </ul>
+      <p class="small" data-i18n="price.premium.n">Prix en France ; le prix est affiché dans votre devise sur l’App Store. 7 jours d’essai gratuit avec l’abonnement annuel, pour un premier abonnement. Abonnement à renouvellement automatique, résiliable à tout moment dans votre compte App Store.</p>
+    </div>
+  </div>
+  <p class="small" data-i18n="price.keep">Ce que vous avez noté reste à vous : vous pouvez tout exporter et tout supprimer, avec ou sans abonnement.</p>
+</section>
+
+<section class="faq" id="questions">
+  <div>
+    <p class="eyebrow" data-i18n="faq.eyebrow">En toute simplicité</p>
+    <h2 data-i18n-html="faq.title">Quelques questions,<br>avant de commencer.</h2>
+  </div>
+  <div>
+    <details><summary data-i18n="faq.q1">À quoi sert Algoo ?</summary><p data-i18n="faq.a1">Algoo vous accompagne pour noter vos douleurs : décrire vos sensations avec des mots simples, indiquer leur intensité et conserver vos observations. Un rapport détaillé vous aide ensuite à en parler avec votre praticien. L’application n’établit pas de diagnostic, ne donne pas de recommandation et ne remplace pas une consultation.</p></details>
+    <details><summary data-i18n="faq.q8">Algoo est-il un dispositif médical ?</summary><p data-i18n="faq.a8">Non. Algoo est un journal personnel. Son seul but est de vous aider à noter ce que vous ressentez et à le retrouver, pour en parler plus facilement avec un professionnel de santé. Il n’analyse pas vos observations, ne détecte rien, ne pose aucun diagnostic et ne recommande aucun traitement. Il ne remplace pas un avis médical.</p></details>
+    <details><summary data-i18n="faq.q2">Faut-il une Apple Watch ?</summary><p data-i18n="faq.a2">Non. L’iPhone est au cœur du journal ; la montre est une façon de plus de noter, au poignet.</p></details>
+    <details><summary data-i18n="faq.q3">Faut-il créer un compte ?</summary><p data-i18n="faq.a3">Non. Algoo fonctionne sans compte et sans inscription.</p></details>
+    <details><summary data-i18n="faq.q4">Dois-je remplir quelque chose chaque jour ?</summary><p data-i18n="faq.a4">Non. Vous notez quand vous le voulez. Un jour sans saisie n’est ni une faute ni une absence de douleur.</p></details>
+    <details><summary data-i18n="faq.q5">Quand pourrai-je télécharger l’application ?</summary><p data-i18n="faq.a5">Algoo est en préparation. La date de sortie et le lien App Store seront communiqués au lancement.</p></details>
+    <details><summary data-i18n="faq.q6">Qu’est-ce qui est gratuit ?</summary><p data-i18n="faq.a6">Noter vos douleurs est gratuit et le reste, avec le journal des 30 derniers jours et le rapport essentiel. Les précisions, l’historique complet et le rapport approfondi font partie d’Algoo Premium : 3,99 € par mois ou 29,99 € par an, avec 7 jours d’essai gratuit sur l’abonnement annuel.</p></details>
+    <details><summary data-i18n="faq.q7">Cette démonstration conserve-t-elle mes réponses ?</summary><p data-i18n="faq.a7">Non. Les choix de cette page servent uniquement à essayer le parcours et disparaissent lorsque vous la rechargez.</p></details>
+  </div>
+</section>
+
+<section class="closing">
+  <img class="mascot idle closing-mascot" id="companion2" src="assets/poses/hello.svg" alt="" width="120" height="120">
+  <p class="eyebrow" data-i18n="closing.eyebrow">Bientôt, dans votre poche</p>
+  <h2 data-i18n="closing.title">Dites-le à Algoo.</h2>
+  <p data-i18n="closing.p">Vos mots au quotidien, des repères pour la consultation. Algoo, le petit compagnon qui vous aide à noter vos douleurs et à mieux en parler.</p>
+  <a class="btn light" href="#demo"><span data-i18n="closing.cta">Faire un petit essai</span> <span aria-hidden="true">→</span></a>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <img src="assets/algoo-wordmark.svg" alt="algoo" height="22">
+  <p data-i18n="footer.note">Journal personnel des douleurs. Ne remplace pas l’avis d’un professionnel de santé.</p>
+  <p class="footer-links"><a href="mentions-legales.html" data-href-en="en/legal.html" data-i18n="footer.legal">Mentions légales</a> · <a href="confidentialite.html" data-href-en="en/privacy.html" data-i18n="footer.privacy">Confidentialité</a> · <a href="assistance.html" data-href-en="en/support.html" data-i18n="footer.support">Assistance</a></p>
+  <p data-i18n="footer.draft">© 2026 Algoo</p>
+</footer>
+
+<dialog id="report" aria-labelledby="report-title">
+  <button type="button" class="dialog-close" data-close aria-label="Fermer">×</button>
+  <p class="eyebrow" data-i18n="report.eyebrow">Exemple fictif</p>
+  <h2 id="report-title" data-i18n="report.title">Mon rapport</h2>
+  <p data-i18n="report.intro">Les observations du quotidien réunies pour mieux en parler : quand, où, quelle sensation et quelle intensité.</p>
+  <div id="report-rows"></div>
+  <p data-i18n="report.note">Présentation illustrative. Le rapport décrit ce que vous avez noté, sans moyenne, sans score et sans interprétation.</p>
+  <button type="button" class="btn" data-close data-i18n="report.close">Fermer l’aperçu</button>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
