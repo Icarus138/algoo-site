@@ -8,15 +8,15 @@
     'nav.meet': 'Meet Algoo', 'nav.journal': 'The report', 'nav.more': 'Details and Health', 'nav.watch': 'Apple Watch', 'nav.friends': 'The friends',
     'hero.eyebrow': 'Your companion for noting pain, day by day',
     'hero.title': 'Your pain,<br>easier<br>to <em>explain.</em>',
-    'hero.intro': 'With Algoo, note your pain when you feel it, in simple words. Find your observations in a <strong>detailed report to share, if you wish, with your practitioner.</strong>',
+    'hero.intro': 'With Algoo, note your pain when you feel it, in simple words. Your entries come together in a <strong>clear report to share, if you wish, with your practitioner.</strong>',
     'hero.try': 'Try it on the phone', 'demo.hint': 'Tap to try', 'hero.report': 'See the report', 'hero.soon': 'Coming soon to iPhone and Apple Watch.',
     'hero.orbit': 'Shall we check in?', 'hero.note': 'Less to remember.<br>More to share.',
     'demo.caption': 'Interactive demo · nothing is kept or sent',
     'watch.greet': 'Hello', 'watch.summary': 'Lower back · Moderate', 'watch.chip': 'Lower back · Change',
     'app.saved': 'Saved.', 'app.question': 'How are things right now?', 'app.pain': 'I’m in pain', 'app.nopain': 'No pain',
-    'benefit.1': 'Note it on the spot, in your own words', 'benefit.2': 'Reread what you noted, day after day', 'benefit.3': 'Share a report with your practitioner',
+    'benefit.1': 'Note it on the spot, in your own words', 'benefit.2': 'Look back at what you noted, day after day', 'benefit.3': 'Share a report with your practitioner',
     'meet.speech': 'Shall we start<br>with a quick check-in?',
-    'meet.eyebrow': 'Your experience deserves its words',
+    'meet.eyebrow': 'Your experience deserves the right words',
     'meet.title': 'Telling it all<br>at an appointment?<br><em>Not that simple.</em>',
     'meet.p1': 'When pain is part of everyday life, describing several weeks of sensations during one appointment can be hard. Where, when, how, how much… Words and memories don’t always come at the right moment.',
     'meet.p2': 'That’s where Algoo comes along. <strong>“Where does it hurt? Pulling, burning? How much?”</strong> Simple questions to note what you feel through the day, without waiting for the appointment.',
@@ -30,10 +30,11 @@
     'steps.s3t': 'How intense is it?', 'steps.s3': 'With words, from 0 to 10, or with facial expressions. Nothing is chosen for you, and your note joins the journal.',
     'journal.eyebrow': '02 — From everyday life to the appointment',
     'journal.title': 'Weeks of<br>lived experience.<br><em>One report<br>to talk about it.</em>',
+    'report.closeLabel': 'Close', 'film.label': 'Algoo presentation video',
     'journal.pdf': 'See a sample PDF →', 'journal.pdfnote': 'A fictional document, as the app produces it.',
     'journal.title2': 'Weeks of lived experience.<br><em>One report to talk about it.</em>',
-    'journal.lead': 'Algoo gathers your observations in a journal and a detailed report, to share with your practitioner if you wish.',
-    'journal.p1': 'Dates, painful areas, sensations, their intensity and the details you added: Algoo gathers your observations in a journal and a detailed report.',
+    'journal.lead': 'Algoo gathers your entries in a journal and a clear report, to share with your practitioner if you wish.',
+    'journal.p1': 'Dates, painful areas, sensations, their intensity and the details you added: Algoo gathers your entries in a journal and a clear report.',
     'journal.p2': 'Share this report with your practitioner if you wish, to give them concrete markers of your daily life. Something to support the conversation and complete your explanations.',
     'journal.k1t': 'A summary at a glance', 'journal.k1': 'The period, locations, sensations and intensities, on one clear page.',
     'journal.k2t': 'A carefully made document', 'journal.k2': 'A plain, readable PDF that says how each intensity was noted.',
@@ -62,7 +63,7 @@
     'friends.intro': 'A messy tuft, a perfectly round face, fur in every direction… This little gang brings gentleness and good cheer, to help you feel at ease when you describe your pain.',
     'friends.c1': 'Big attentive eyes.<br>The first to say hello.',
     'friends.n2': 'Little Tuft', 'friends.c2': 'A curious look.<br>A touch of good cheer.',
-    'friends.n3': 'Roly-Poly', 'friends.c3': 'A calm presence.<br>Everyone takes their time.',
+    'friends.n3': 'Roly-Poly', 'friends.c3': 'A calm presence.<br>Never in a hurry.',
     'friends.n4': 'Fuzzy', 'friends.c4': 'A bit ruffled.<br>Just as endearing.',
     'friends.caption': 'Tap the one who will keep you company.',
     'friends.project': 'Choosing your companion is planned for the app; here, it changes the character on this page.',
@@ -73,16 +74,16 @@
     'story.b1t': 'It says hello', 'story.b1': 'One question at a time, when you feel like it. Never a reproach if you noted nothing.',
     'story.b2t': 'It shows what you feel', 'story.b2': 'Squeezing, pulling, burning: it mimes the sensation, you recognise yours. No vocabulary to learn.',
     'story.b3t': 'It remembers for you', 'story.b3': 'Every note joins your journal. You no longer have to keep it all in your head.',
-    'story.b4t': 'You say how much', 'story.b4': 'With words, a number or a face: you choose. Nothing is ticked in advance.',
+    'story.b4t': 'You say how much', 'story.b4': 'With words, a number or a face: you choose. Nothing is preselected.',
     'story.b5t': 'On the day of the appointment, it’s all there', 'story.b5': 'A clear report, in your words, to show if you wish. You tell your story without forgetting anything.',
     'story.c1': 'How are things?', 'story.c2': 'Squeezing', 'story.c3': 'Noted.', 'story.c4': 'Moderate', 'story.c5': 'Your report is ready',
     'trust.eyebrow': 'Your data',
     'trust.1t': 'No account, no Algoo server.', 'trust.1': 'Nothing to create to get started. Your journal is kept on your devices.',
-    'trust.2t': 'No ads, no audience tracking.', 'trust.2': 'The app contains no advertising or analytics tools.',
+    'trust.2t': 'No ads, no analytics.', 'trust.2': 'The app contains no advertising or analytics tools.',
     'trust.3t': 'You decide what is shared.', 'trust.3': 'A report only leaves the app when you ask for it. Device backups follow your Apple settings.',
     'faq.eyebrow': 'Keeping it simple', 'faq.title': 'A few questions,<br>before you start.',
     'faq.q1': 'What is Algoo for?',
-    'faq.a1': 'Algoo helps you note your pain: describe your sensations in simple words, indicate their intensity and keep your observations. A detailed report then helps you talk about it with your practitioner. The app does not diagnose, give recommendations or replace an appointment.',
+    'faq.a1': 'Algoo helps you note your pain: describe your sensations in simple words, indicate their intensity and keep your observations. A clear report then helps you talk about it with your practitioner. The app does not diagnose, give recommendations or replace an appointment.',
     'faq.q8': 'Is Algoo a medical device?', 'faq.a8': 'No. Algoo is a personal journal. Its only purpose is to help you note what you feel and find it again, so it is easier to talk about with a health professional. It does not analyse your entries, detects nothing, makes no diagnosis and recommends no treatment. It does not replace medical advice.',
     'faq.q2': 'Do I need an Apple Watch?', 'faq.a2': 'No. The iPhone is the heart of the journal; the watch is one more way to note, on your wrist.',
     'faq.q3': 'Do I need an account?', 'faq.a3': 'No. Algoo works with no account and no sign-up.',
@@ -96,10 +97,10 @@
     'price.premium.1': 'Details: context, other signs, daily life, mood, what you tried, notes', 'price.premium.2': 'Your whole journal, beyond 30 days', 'price.premium.3': 'The overview over long periods', 'price.premium.4': 'The in-depth report, with your details and notes', 'price.premium.5': 'Apple Health data added to the report, if you wish',
     'price.free.s1': 'Note your pain, on iPhone and Apple Watch', 'price.free.s4': 'A full export of your data',
     'price.premium.trial': '7 days free with the yearly plan', 'price.premium.p2': '<strong>€29.99</strong> a year <span>or €3.99 a month</span>',
-    'price.premium.s1': 'Context, signs, mood, and more', 'price.premium.s3': 'Your overview over 3 months, 6 months, 1 year', 'price.premium.s4': 'A detailed report, ready to share', 'price.premium.s5': 'Apple Health in your report',
+    'price.premium.s1': 'Context, signs, mood, and more', 'price.premium.s3': 'Your overview over 3 months, 6 months, 1 year', 'price.premium.s4': 'The in-depth report, ready to share', 'price.premium.s5': 'Apple Health in your report',
     'price.opt.tag': '7 days free · −37%', 'price.opt.y': 'Yearly', 'price.opt.yp': '<strong>€29.99</strong> a year', 'price.opt.ys': 'that’s €2.50 a month',
     'price.opt.m': 'Monthly', 'price.opt.mp': '<strong>€3.99</strong> a month', 'price.opt.ms': 'that’s €47.88 over a year',
-    'price.opt.ys2': 'that’s €2.50 a month<br>7 days free to try it', 'price.opt.save': '<strong>−37%</strong><span>saved</span>', 'price.opt.mline': 'Monthly: <strong>€3.99</strong> a month',
+    'price.opt.ys2': 'that’s €2.50 a month<br>7 days free to try it', 'price.opt.save': '<strong>Save 37%</strong><span></span>', 'price.opt.mline': 'Monthly: <strong>€3.99</strong> a month',
     'price.premium.n': 'Price in France; the price is shown in your currency on the App Store. 7-day free trial with the yearly plan, for a first subscription. Auto-renewing subscription you can cancel anytime in your App Store account.',
     'price.keep': 'What you noted stays yours: you can export all of it and delete it, with or without a subscription.',
     'faq.q7': 'Does this demo keep my answers?', 'faq.a7': 'No. The choices on this page only let you try the check-in and disappear when you reload it.',
@@ -119,8 +120,8 @@
   // Textes de la démonstration, repris du catalogue de l'app.
   var APP = {
     fr: {
-      day: 'Bonjour', evening: 'Bonsoir', start: 'Comment ça se passe ?', pain: 'J’ai mal', noPain: 'Pas de douleur',
-      where: 'Où ça fait mal ?', how: 'Ça fait quoi ?', intensity: 'Quelle intensité ?',
+      day: 'Bonjour', evening: 'Bonsoir', start: 'Comment ça se passe ?', pain: 'J’ai mal', noPain: 'Pas de douleur',
+      where: 'Où ça fait mal ?', how: 'Ça fait quoi ?', intensity: 'Quelle intensité ?',
       continueWith: 'Continuer avec « %@ »', save: 'Enregistrer', saved: 'C’est noté.', again: 'Refaire un petit point', back: 'Retour', details: 'Ajouter des précisions',
       previous: 'Sensation précédente', next: 'Sensation suivante', noted: 'Intensité notée',
       zones: ['Tête', 'Épaule', 'Bas du dos', 'Abdomen', 'Genou'],
@@ -177,7 +178,11 @@
     void el.mascot.offsetWidth; // relance l'animation
     if (animation) el.mascot.classList.add('a-' + animation);
   }
-  function go(step) { state.step = step; document.querySelector('.phone').classList.add('touched'); render(); }
+  function go(step) {
+    state.step = step; document.querySelector('.phone').classList.add('touched'); render();
+    // Le focus suit l'étape : clavier et VoiceOver repartent de la nouvelle question.
+    el.question.focus({ preventScroll: true });
+  }
 
   function render() {
     var t = APP[lang];
@@ -213,7 +218,10 @@
       // Algoo prend l'expression du mot choisi ; rien n'est présélectionné (D24).
       if (state.level === null) pose('neutral'); else pose('intensity-' + (state.level + 1), 'level');
       t.levels.forEach(function (l, i) {
-        var b = button(l, function () { state.level = state.level === i ? null : i; render(); });
+        var b = button(l, function () {
+          state.level = state.level === i ? null : i; render();
+          var again = el.choices.querySelectorAll('button')[i]; if (again) again.focus({ preventScroll: true });
+        });
         b.setAttribute('aria-pressed', String(state.level === i));
         el.choices.append(b);
       });
@@ -268,6 +276,13 @@
     textNodes.forEach(function (n) { n.textContent = dict[n.dataset.i18n] || FR[n.dataset.i18n]; });
     document.querySelectorAll('[data-i18n-label]').forEach(function (n) { n.setAttribute('aria-label', lang === 'en' ? EN[n.dataset.i18nLabel] : 'Faire réagir Algoo'); });
     htmlNodes.forEach(function (n) { n.innerHTML = dict[n.dataset.i18nHtml] || FR[n.dataset.i18nHtml]; }); // textes de ce fichier uniquement
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (n) {
+      if (!n.dataset.ariaFr) n.dataset.ariaFr = n.getAttribute('aria-label');
+      n.setAttribute('aria-label', lang === 'en' ? EN[n.dataset.i18nAria] : n.dataset.ariaFr);
+    });
+    // La montre dit bonjour ou bonsoir selon l'heure, comme le téléphone.
+    var hour = new Date().getHours(), day = hour >= 5 && hour < 18;
+    document.querySelectorAll('[data-i18n="watch.greet"]').forEach(function (n) { n.textContent = day ? APP[lang].day : APP[lang].evening; });
     document.querySelectorAll('[data-href-en]').forEach(function (a) {
       if (!a.dataset.hrefFr) a.dataset.hrefFr = a.getAttribute('href');
       a.setAttribute('href', lang === 'en' ? a.dataset.hrefEn : a.dataset.hrefFr);
