@@ -210,7 +210,8 @@
         button(t.back, function () { go('zone'); }, 'link'));
     } else if (state.step === 'intensity') {
       el.question.textContent = t.intensity;
-      pose('neutral');
+      // Algoo prend l'expression du mot choisi ; rien n'est présélectionné (D24).
+      if (state.level === null) pose('neutral'); else pose('intensity-' + (state.level + 1), 'level');
       t.levels.forEach(function (l, i) {
         var b = button(l, function () { state.level = state.level === i ? null : i; render(); });
         b.setAttribute('aria-pressed', String(state.level === i));
