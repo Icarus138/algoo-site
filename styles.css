@@ -321,7 +321,8 @@ button.friend-card { border: 0; background: none; padding: 0 0 10px; display: bl
 .legal h2 { font-size: 1.2rem; margin: 34px 0 8px; }
 .legal p, .legal li { color: var(--muted); margin-bottom: 10px; }
 .legal ul { padding-left: 20px; }
-.legal a, .footer-links a { text-decoration: underline; text-underline-offset: 3px; }
+.legal a, .footer-links a, .inline-link { text-decoration: underline; text-underline-offset: 3px; }
+.inline-link { color: var(--ink); }
 .legal .updated { font-size: 0.85rem; }
 .lang a { padding: 6px 10px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
 .lang a[aria-current="page"] { background: var(--ink); color: var(--paper); }

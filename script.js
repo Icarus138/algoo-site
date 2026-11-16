@@ -9,7 +9,7 @@
     'hero.eyebrow': 'Your companion for noting pain, day by day',
     'hero.title': 'Your pain,<br>easier<br>to <em>explain.</em>',
     'hero.intro': 'With Algoo, note your pain when you feel it, in simple words. Your entries come together in a <strong>clear report to share, if you wish, with your practitioner.</strong>',
-    'hero.try': 'Try it on the phone', 'demo.hint': 'Tap to try', 'hero.report': 'See the report', 'hero.soon': 'Coming soon to iPhone and Apple Watch.',
+    'hero.try': 'Try it on the phone', 'demo.hint': 'Tap to try', 'hero.report': 'See the report', 'hero.soon': 'Coming soon to iPhone and Apple Watch.', 'hero.follow': 'Follow Algoo:',
     'hero.orbit': 'Shall we check in?', 'hero.note': 'Less to remember.<br>More to share.',
     'demo.caption': 'Interactive demo · nothing is kept or sent',
     'watch.greet': 'Hello', 'watch.summary': 'Lower back · Moderate', 'watch.chip': 'Lower back · Change',
