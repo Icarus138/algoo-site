@@ -30,7 +30,7 @@
     'steps.s3t': 'How intense is it?', 'steps.s3': 'With words, from 0 to 10, or with facial expressions. Nothing is chosen for you, and your note joins the journal.',
     'journal.eyebrow': '02 — From everyday life to the appointment',
     'journal.title': 'Weeks of<br>lived experience.<br><em>One report<br>to talk about it.</em>',
-    'report.closeLabel': 'Close', 'film.label': 'Algoo presentation video',
+    'report.closeLabel': 'Close', 'film.label': 'Algoo presentation video', 'film.sound': 'Turn sound on',
     'journal.pdf': 'See a sample PDF →', 'journal.pdfnote': 'A fictional document, as the app produces it.',
     'journal.title2': 'Weeks of lived experience.<br><em>One report to talk about it.</em>',
     'journal.lead': 'Algoo gathers your entries in a journal and a clear report, to share with your practitioner if you wish.',
@@ -369,10 +369,30 @@
       film.load();
       if (wasPlaying) film.play().catch(function () {});
     };
+    // Son : essayé au démarrage ; si le navigateur refuse, lecture muette et bouton « Activer le son ».
+    var soundBtn = document.getElementById('film-sound');
+    var mutedByVisitor = false, settingMute = false;
+    function setMuted(m) { settingMute = true; film.muted = m; setTimeout(function () { settingMute = false; }, 0); }
+    function startFilm() {
+      if (mutedByVisitor) { film.play().catch(function () {}); return; }
+      setMuted(false);
+      film.play().then(function () { soundBtn.hidden = true; }).catch(function () {
+        setMuted(true);
+        film.play().then(function () { soundBtn.hidden = false; }).catch(function () {});
+      });
+    }
+    film.addEventListener('volumechange', function () {
+      if (!settingMute) mutedByVisitor = film.muted;
+      if (!film.muted) soundBtn.hidden = true;
+    });
+    soundBtn.addEventListener('click', function () {
+      mutedByVisitor = false; setMuted(false); soundBtn.hidden = true;
+      film.play().catch(function () {});
+    });
     if ('IntersectionObserver' in window && !still) {
       new IntersectionObserver(function (items) {
         items.forEach(function (it) {
-          if (it.isIntersecting) film.play().catch(function () {}); else film.pause();
+          if (it.isIntersecting) startFilm(); else film.pause();
         });
       }, { threshold: 0.6 }).observe(film);
     }

@@ -90,8 +90,9 @@
 <section class="film" id="film">
   <p class="eyebrow mauve" data-i18n="film.eyebrow">En quarante secondes</p>
   <h2 data-i18n-html="film.title">Algoo, <em>en images.</em></h2>
-  <!-- Elle a du son mais démarre muette, comme l'exigent les navigateurs ; le son se rétablit depuis
-       les commandes. Sous-titres au choix. Elle ne démarre seule que si elle est à l'écran et si le système
+  <!-- Elle démarre avec le son quand le navigateur l'autorise (le visiteur a déjà touché la page) ;
+       sinon muette, avec un bouton « Activer le son ». Un visiteur qui coupe le son n'est pas contredit.
+       Sous-titres au choix. Elle ne démarre seule que si elle est à l'écran et si le système
        ne demande pas de réduire les animations ; les commandes restent toujours disponibles. -->
   <div class="film-frame">
     <video id="film-video" aria-label="Vidéo de présentation d’Algoo" data-i18n-aria="film.label" muted loop playsinline controls preload="none" poster="assets/video/algoo-fr.jpg"
@@ -101,6 +102,7 @@
       <source src="assets/video/algoo-fr.mp4" type="video/mp4">
       <track kind="captions" srclang="fr" label="Français" src="assets/video/algoo-fr.vtt">
     </video>
+    <button type="button" class="film-sound" id="film-sound" hidden><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z" fill="currentColor"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18.2 6.5a8 8 0 0 1 0 11"/></svg> <span data-i18n="film.sound">Activer le son</span></button>
   </div>
 </section>
 
