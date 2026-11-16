@@ -172,6 +172,9 @@ details p { color: var(--muted); font-size: 0.86rem; max-width: 520px; margin-to
 
 footer { display: flex; justify-content: space-between; gap: 25px; align-items: center; border-top: 1px solid var(--line); padding-top: 30px; padding-bottom: 40px; font-size: 0.75rem; color: var(--muted); }
 footer img { height: 22px; width: auto; }
+.footer-social { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+.footer-social a { display: inline-flex; padding: 6px; margin: -6px 0; color: var(--ink); border-radius: 8px; transition: transform 0.2s; }
+.footer-social a:hover { transform: translateY(-2px); }
 
 dialog { border: 0; border-radius: 22px; padding: 35px; max-width: 500px; width: calc(100% - 40px); background: var(--paper); color: var(--ink); box-shadow: 0 20px 100px rgba(0, 0, 0, 0.2); }
 dialog::backdrop { background: rgba(24, 37, 27, 0.5); backdrop-filter: blur(4px); }
